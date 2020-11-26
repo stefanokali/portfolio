@@ -16,18 +16,13 @@
     <div id="projects">
         <div class="project-tile">
             <div class="project-title">Survey Form</div>
-            <div class="project-img"></div>
+            <img class="project-img" src="https://user-images.githubusercontent.com/29156426/100367073-aa674e00-303c-11eb-885e-52d241da3829.png">
             <div class="project-desc"></div>
-
-
-
-
         </div>
         <div class="project-tile">
-            Project 2
-        </div>
-        <div class="project-tile">
-            Project 3
+            <div class="project-title">Landing Page</div>
+            <img class="project-img" src="https://user-images.githubusercontent.com/29156426/100367802-b8699e80-303d-11eb-8e38-a3729db3b117.png">
+            <div class="project-desc"></div>
         </div>
     </div>
 
@@ -67,16 +62,24 @@ container {
 #projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
 }
 
 .project-tile {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     margin: 20px;
     background-color: rgb(167, 167, 245);
+}
+
+.project-img {
+    height: 90%;
+    width: 90%;
+    padding: 10px;
+    
 }
 
 </style>
