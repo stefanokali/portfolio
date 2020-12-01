@@ -3,16 +3,21 @@
 <container>
 
     <head>
-    <navbar id="navbar">
+        <navbar id="navbar">
+            <div id="nav-list">
+                <a class="nav-link" href=#welcome-section>About</a>
+                <a class="nav-link" href=#projects>Projects</a>
+                <a class="nav-link" href=#contact>Contact</a>
+            </div>
+        </navbar>
 
-    </navbar>
 
-
-    <div id="welcome-section">
-        <h1>Hi! My name is Stefano Kusuma Ali</h1>
-        <div class="welcome-desc">I am a full stack web developer</div>
-        <div class="welcome-desc">Kindly find my previous works and project below.</div>
-    </div>
+        <div id="welcome-section">
+            <h1 class="welcome-title">Hi! My name is Stefano Kusuma Ali</h1>
+            <div class="welcome-desc">  I am a full stack web developer</br>
+                                        Kindly find my previous works and project below.
+            </div>
+        </div>
 
     </head>
 
@@ -36,13 +41,13 @@
     <div id="contact">
         <div id="contact-title">Please find me at:</div>
         <div id="contact-logo">
-            <a href="https://github.com/stefanokali">
+            <a id="profile-link" target="_blank" href="https://github.com/stefanokali">
                 <img class="contact-img" src="https://1000logos.net/wp-content/uploads/2018/11/GitHub-logo-500x452.png">
             </a>
-            <a href="https://www.linkedin.com/in/stefanokusumaali/">
+            <a id="profile-link" target="_blank" href="https://www.linkedin.com/in/stefanokusumaali/">
                 <img class="contact-img" src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg">
             </a>
-            <a href="mailto:stefanokusumaali@gmail.com">
+            <a id="profile-link" href="mailto:stefanokusumaali@gmail.com">
                 <img class="contact-img" src="https://image.flaticon.com/icons/png/512/8/8807.png">
             </a>
         </div>
@@ -67,6 +72,20 @@ container {
     margin: auto;
 }
 
+#navbar {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    display: flex;
+}
+
+#nav-list {
+    margin-left: auto;
+}
+.nav-link {
+    margin: 10px;
+}
+
 #welcome-section {
     display: flex;
     flex-direction: column;
@@ -77,12 +96,18 @@ container {
     height: 100vh; 
     background-image: url('images/welcome-background.jpg');
     background-size: cover;
+    text-align: center;
+}
+
+.welcome-title {
+    padding-bottom: 550px;
 }
 
 #projects {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .project-tile {
@@ -94,7 +119,7 @@ container {
     margin: 20px;
     background-color: rgb(167, 167, 245);
     font-size: 10px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .project-tile:hover {
@@ -113,16 +138,23 @@ container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: blue;
+    width: 100%;
 }
 
 #contact-title {
     padding: 10px;
+
 }
 
 .contact-img {
     height: 30px;
     width: 30px;
-    padding: 10px;
+    padding: 15px;
+}
+
+.contact-img:hover {
+    padding-bottom: 10px;
 }
 
 a {
