@@ -2,6 +2,7 @@
 
 <container>
 
+    <head>
     <navbar id="navbar">
 
     </navbar>
@@ -12,6 +13,11 @@
         <div class="welcome-desc">I am a full stack web developer</div>
         <div class="welcome-desc">Kindly find my previous works and project below.</div>
     </div>
+
+    </head>
+
+
+    <body>
 
     <div id="projects">
         <div class="project-tile">
@@ -28,8 +34,21 @@
 
 
     <div id="contact">
-        Jos
+        <div id="contact-title">Please find me at:</div>
+        <div id="contact-logo">
+            <a href="https://github.com/stefanokali">
+                <img class="contact-img" src="https://1000logos.net/wp-content/uploads/2018/11/GitHub-logo-500x452.png">
+            </a>
+            <a href="https://www.linkedin.com/in/stefanokusumaali/">
+                <img class="contact-img" src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg">
+            </a>
+            <a href="mailto:stefanokusumaali@gmail.com">
+                <img class="contact-img" src="https://image.flaticon.com/icons/png/512/8/8807.png">
+            </a>
+        </div>
     </div>
+
+    </body>
 
 </container>
 
@@ -57,6 +76,7 @@ container {
     width: 100%;
     height: 100vh; 
     background-color: rgb(245, 166, 166);
+    border-bottom: 10px solid red;
 }
 
 #projects {
@@ -73,6 +93,13 @@ container {
     width: 300px;
     margin: 20px;
     background-color: rgb(167, 167, 245);
+    font-size: 10px;
+    transition: 1s;
+}
+
+.project-tile:hover {
+    width: 350px;
+    font-size: 15px;
 }
 
 .project-img {
@@ -80,6 +107,26 @@ container {
     width: 90%;
     padding: 10px;
     
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-title {
+    padding: 10px;
+}
+
+.contact-img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 </style>
