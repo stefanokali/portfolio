@@ -1,4 +1,6 @@
 <html>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Noto+Sans+HK&display=swap" rel="stylesheet">
 
 <container>
 
@@ -25,29 +27,33 @@
     <body>
 
     <div id="projects">
-        <div class="project-tile">
-            <div class="project-title">Survey Form</div>
-            <img class="project-img" src="https://user-images.githubusercontent.com/29156426/100367073-aa674e00-303c-11eb-885e-52d241da3829.png">
-            <div class="project-desc"></div>
-        </div>
-        <div class="project-tile">
-            <div class="project-title">Landing Page</div>
-            <img class="project-img" src="https://user-images.githubusercontent.com/29156426/100367802-b8699e80-303d-11eb-8e38-a3729db3b117.png">
-            <div class="project-desc"></div>
-        </div>
+        <a href = https://codepen.io/stefanokali/full/vYKKYNM target="_blank">
+            <div class="project-tile">
+                <div class="project-title">Survey Form</div>
+                <img class="project-img" src="https://user-images.githubusercontent.com/29156426/100367073-aa674e00-303c-11eb-885e-52d241da3829.png">
+                <div class="project-desc"></div>
+            </div>
+        </a>
+        <a href = https://codepen.io/stefanokali/full/bGeQzPb target="_blank">
+            <div class="project-tile">
+                <div class="project-title">Landing Page</div>
+                <img class="project-img" src="https://user-images.githubusercontent.com/29156426/100367802-b8699e80-303d-11eb-8e38-a3729db3b117.png">
+                <div class="project-desc"></div>
+            </div>
+        </a>
     </div>
 
 
     <div id="contact">
         <div id="contact-title">Please find me at:</div>
         <div id="contact-logo">
-            <a id="profile-link" target="_blank" href="https://github.com/stefanokali">
+            <a id="profile-link" target="_blank" href="https://github.com/stefanokali" target="_blank">
                 <img class="contact-img" src="https://1000logos.net/wp-content/uploads/2018/11/GitHub-logo-500x452.png">
             </a>
-            <a id="profile-link" target="_blank" href="https://www.linkedin.com/in/stefanokusumaali/">
+            <a id="profile-link" target="_blank" href="https://www.linkedin.com/in/stefanokusumaali/" target="_blank">
                 <img class="contact-img" src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg">
             </a>
-            <a id="profile-link" href="mailto:stefanokusumaali@gmail.com">
+            <a id="profile-link" href="mailto:stefanokusumaali@gmail.com" target="_blank">
                 <img class="contact-img" src="https://image.flaticon.com/icons/png/512/8/8807.png">
             </a>
         </div>
@@ -70,14 +76,19 @@ container {
     display: grid;
     justify-items: center;
     margin: auto;
+    font-family: 'Noto Sans HK', sans-serif;
 }
 
 #navbar {
     width: 100%;
     position: fixed;
-    background-color: white;
+    background-color: rgb(202, 173, 173);
     display: flex;
+    height: 35px;
+    align-items: center;
 }
+
+
 
 #nav-list {
     margin-left: auto;
@@ -94,13 +105,15 @@ container {
     margin: auto;
     width: 100%;
     height: 100vh; 
-    background-image: url('images/welcome-background.jpg');
+    background-image: url(https://unsplash.com/photos/oeCoJaR606A/download?force=true);
     background-size: cover;
     text-align: center;
+    background-position: center;
 }
 
+
 .welcome-title {
-    padding-bottom: 550px;
+    padding: 0 10px 0 10px;
 }
 
 #projects {
@@ -108,6 +121,8 @@ container {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    background-color: white;
 }
 
 .project-tile {
@@ -117,7 +132,7 @@ container {
     align-items: center;
     width: 300px;
     margin: 20px;
-    background-color: rgb(167, 167, 245);
+    background-color: rgb(161,97,64);
     font-size: 10px;
     transition: 0.5s;
 }
@@ -138,7 +153,7 @@ container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blue;
+    background-color: rgb(202, 173, 173);
     width: 100%;
 }
 
@@ -160,5 +175,28 @@ container {
 a {
     text-decoration: none;
 }
+
+
+
+@media (max-width: 800px) {
+
+
+    .project-tile {
+    width: 400px;
+    }
+
+    .project-tile:hover {
+        width: 450px;
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+
+}
+
 
 </style>
