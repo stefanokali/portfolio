@@ -107,7 +107,7 @@ container {
     margin: auto;
     width: 100%;
     height: 100vh; 
-    background-image: url('/images/welcome-background.jpg');
+    background-image: url('/images/welcome-background-min.jpg');
     background-size: cover;
     text-align: center;
     background-position: center;
@@ -143,13 +143,18 @@ container {
     align-items: center;
     width: 300px;
     margin: 20px;
-    background-color: rgb(161,97,64);
+    background-color: rgb(202, 173, 173);
     font-size: 10px;
     transition: 0.5s;
 }
 
 .project-tile:hover {
     width: 350px;
+    font-size: 15px;
+}
+
+.project-title {
+    padding-top: 10px;
     font-size: 15px;
 }
 
@@ -187,7 +192,9 @@ a {
     text-decoration: none;
 }
 
-
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
 
 @media (max-width: 800px) {
 
